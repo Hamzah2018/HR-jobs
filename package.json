@@ -1,0 +1,22 @@
+{
+  "name": "hr-jobs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hamzah2018/HR-jobs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hamzah2018/HR-jobs/issues"
+  },
+  "homepage": "https://github.com/Hamzah2018/HR-jobs#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
