@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../assests/css/style.css">
+    <link rel="stylesheet" href="../../assests/css/all.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+<body>
+<!-- Button trigger modal -->
+<main class="container justify-content-center">
+<div class="card col-3 m-5" style="width: 18rem;">
+    <img src="../../assests/imges/profile.png" class="card-img-top img-fluid" alt="...">
+    <div class="card-body">
+        <div>
+            <h3>Kalid Mahommed</h3>
+            <p class="card-text">Full-Stuck Developer 7 Years working in Amazion.</p>
+        </div>
+        <button type="button" class="btn btn-outline-dark m-5 justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Manage Your Profile
+         </button>
+         
+         <!-- Modal -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+             <div class="modal-content">
+               <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLabel">Khaild Mohammed</h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                 <img src="../../assests/imges/profile.png" alt="">
+                 <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1"  class="form-label">Email address</label>
+                      <input type="email" placeholder="khalid@hotmail.com" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Your Phone Number</label>
+                        <input type="text" placeholder="967-773770030" class="form-control" id="exampleInputPassword1">
+                      </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">New</button>
+                  </form>
+               </div>
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                 <button type="button" class="btn btn-primary">Edite</button>
+                 <button type="button" class="btn btn-primary">Delete</button>
+                 <button type="button" class="btn btn-primary">Save</button>
+               </div>
+             </div>
+           </div>
+         </div>
+    </div>
+  </div>
+</main>
+   
+    <script src="../../assests/lib/jquery-3.6.0.min_2.js"> 
+    </script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!-- <script>
+        var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
+        
+        myModal.addEventListener('shown.bs.modal', function () {
+          myInput.focus()
+        })
+    </script> -->
+</body>
+</html>

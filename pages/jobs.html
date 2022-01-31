@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- menu section  -->
- <nav class="navbar navbar-expand-lg navbar-light" >
+ <nav class="navbar navbar-expand-lg navbar-light container-fluid" >
   <div class="container-fluid">
     <a class="navbar-brand" href="../index.html">H<span style="color: yellow;">R</span> <small >Jobs </small> </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -95,18 +95,19 @@
       </div>
     </main> 
     <footer></footer>
+    <script src="../assests/lib/jquery-3.6.0.min_2.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="assests/js/template .js"></script>
     <script>
-      $(document).ready(function(){
-        $("#myInput").on("keyup", function() {
-          var value = $(this).val().toLowerCase();
-          $("#myList li").filter(function() {
-            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-          });
-        });
-      });
-      </script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myList li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
   </body>
 
 
