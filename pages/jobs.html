@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HR jobs</title>
@@ -14,7 +13,7 @@
     <!-- menu section  -->
  <nav class="navbar navbar-expand-lg navbar-light" >
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">H<span style="color: yellow;">R</span> <small >Jobs </small> </a>
+    <a class="navbar-brand" href="../index.html">H<span style="color: yellow;">R</span> <small >Jobs </small> </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -51,13 +50,64 @@
 <!--End menu section  -->
 <header>
 </header>
+<div class="container">
+  <h2>Filterable List</h2>
+  <p>Type something in the input field to search the list for specific items:</p>  
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+  <ul class="list-group" id="myList">
+    <li class="list-group-item">First item</li>
+    <li class="list-group-item">Second item</li>
+    <li class="list-group-item">Third item</li>
+    <li class="list-group-item">Fourth</li>
+  </ul>  
+</div>
+
+<!-- class="col-sm-4" -->
     <main>
-      
-        <aside></aside>
-    </main>       
+      <div class="card border-primary mb-3" style="max-width: 18rem;">
+        <div class="card-header">Graphic Desgin</div>
+        <div class="card-body text-primary">
+          <h5 class="card-title"></h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card border-secondary mb-3" style="max-width: 18rem;">
+        <div class="card-header">Camera Man</div>
+        <div class="card-body text-secondary">
+          <h5 class="card-title">Secondary card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card border-success mb-3" style="max-width: 18rem;">
+        <div class="card-header">Arcticure</div>
+        <div class="card-body text-success">
+          <h5 class="card-title">Success card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card border-danger mb-3" style="max-width: 18rem;">
+        <div class="card-header">Doctore</div>
+        <div class="card-body text-danger">
+          <h5 class="card-title">Danger card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </main> 
     <footer></footer>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-</body>
+    <script src="assests/js/template .js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#myInput").on("keyup", function() {
+          var value = $(this).val().toLowerCase();
+          $("#myList li").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+      });
+      </script>
+  </body>
 
-<script src="assests/js/template .js"></script>
+
 </html>
