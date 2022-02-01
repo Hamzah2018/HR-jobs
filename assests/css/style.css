@@ -11,6 +11,8 @@
     --color-six:#3d3d3d;
     --color-seven:#6592fe;
     --color-eight:#1e306e;
+    --color-weght:#F8F9FA;
+    --color-weght2:#F5F5F5;
 } 
 *{
     /* color:    var(--color-one); */
@@ -39,6 +41,10 @@ main{
         flex-direction: column;
     }
 }
+/* 
+.border-end{
+    background-color: #059862;
+} */
 aside{
     display: flex;
     justify-content: space-between;

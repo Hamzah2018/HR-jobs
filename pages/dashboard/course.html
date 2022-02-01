@@ -4,9 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Experience</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../assests/css/style.css">
+    <link rel="stylesheet" href="../../assests/css/all.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
 </head>
 <body>
-    
+  <div class="d-flex" id="wrapper">
+    <!-- Sidebar-->
+    <div class="border-end bg-white" id="sidebar-wrapper">
+      <a class="sidebar-heading border-bottom bg-light btn" href="../index.html">H<span style="color: yellow;">R</span> <small >Jobs </small> </a>
+
+      <!-- <div class="sidebar-heading border-bottom bg-light">HR jobs</div> -->
+        <div class="list-group list-group-flush">
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#">Dashboard</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="protfile.html">Protfile</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="experience.html">Experience</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="skills.html">Skills</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="Qualifications.html">Qualifications</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="course.html">Courses</a>
+        </div>
+    </div>
+<!-- Button trigger modal -->
+<main class="container justify-content-center">
+  <div class="card col-3 m-5" style="width: 18rem;">
+      <img src="../../assests/imges/courses.png" class="card-img-top img-fluid" alt="...">
+      <div class="card-body">
+          <div>
+              <h3>Courses</h3>
+              <p class="card-text">Full-Stuck Developer 7 Years working in Amazion.</p>
+          </div>
+          <button type="button" class="btn btn-outline-dark m-5 justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Manage Your Profile
+           </button>
+           
+           <!-- Modal -->
+           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+             <div class="modal-dialog">
+               <div class="modal-content">
+                 <div class="modal-header">
+                   <h5 class="modal-title" id="exampleModalLabel">Course</h5>
+                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                 <div class="modal-body">
+                   <img src="../../assests/imges/courses.png" class="img-fluid" alt="">
+                   <form>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Enter the Course</label>
+                        <input type="text" class="form-control" id="Com2">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Import Certificate</button>
+                     
+                      <button type="submit" class="btn btn-primary">New</button>
+                    </form>
+                    <button type="submit" class="btn btn-primary">New</button>
+                  </form>
+                 </div>
+                 <div class="modal-footer">
+                   <form action="protfile.html" method="get">
+
+                    <button class="border rounded-2"> <<< </button>
+                   </form>
+                  
+                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                   <button type="button" class="btn btn-primary">Edite</button>
+                   <button type="button" class="btn btn-danger">Delete</button>
+                   <button type="button" class="btn btn-primary">Save</button>
+                   <a class="btn btn" href="skills.html"> >>> </button>
+                  
+                 </div>
+               </div>
+             </div>
+           </div>
+      </div>
+    </div>
+  </main>
+
+   
+    <script src="../../assests/lib/jquery-3.6.0.min_2.js"> 
+    </script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!-- <script>
+        var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
+        
+        myModal.addEventListener('shown.bs.modal', function () {
+          myInput.focus()
+        })
+    </script> -->
 </body>
 </html>

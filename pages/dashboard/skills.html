@@ -13,6 +13,24 @@
     
 </head>
 <body>
+  <div class="d-flex" id="wrapper">
+    <!-- Sidebar-->
+
+    <div class="border-end bg-white" id="sidebar-wrapper">
+      <!-- <div class="sidebar-heading border-bottom bg-light">HR jobs</div> -->
+      <!-- <a class="sidebar-heading border-bottom bg-light" href="../../index.html">H<span style="color: yellow;">R</span> <small >Jobs </small> </a> -->
+      <a class="sidebar-heading border-bottom bg-light btn" href="../../index.html">H<span style="color: yellow;">R</span> <small >Jobs </small> </a>
+
+        <div class="list-group list-group-flush">
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#">Dashboard</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="protfile.html">Protfile</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="experience.html">Experience</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="skills.html">Skills</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="Qualifications.html">Qualifications</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="course.html">Courses</a>
+        </div>
+    </div>
+   <!-- Modal -->
 <!-- Button trigger modal -->
 <main class="container justify-content-center">
   <div class="card col-3 m-5" style="width: 18rem;">
@@ -25,8 +43,6 @@
           <button type="button" class="btn btn-outline-dark m-5 justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Manage Your Profile
            </button>
-           
-           <!-- Modal -->
            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
              <div class="modal-dialog">
                <div class="modal-content">
@@ -57,7 +73,7 @@
                   <button> <<< </button>
                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                    <button type="button" class="btn btn-primary">Edite</button>
-                   <button type="button" class="btn btn-primary">Delete</button>
+                   <button type="button" class="btn btn-danger">Delete</button>
                    <button type="button" class="btn btn-primary">Save</button>
                    <button> >>> </button>
                  </div>
