@@ -18,6 +18,10 @@
     color: gold;
     line-height: 30px;
 }
+a{
+    color: rgb(253, 238, 151);
+    border-radius: 4px;   
+}
 
 .navbar{
     background-color:#059862;
