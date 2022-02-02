@@ -59,6 +59,9 @@ aside{
         margin-bottom:40px;
     }
 }
+li{
+    /* list-style-type: none; */
+}
 /* .carousel-control-next-icon{
     color: gold;
 
