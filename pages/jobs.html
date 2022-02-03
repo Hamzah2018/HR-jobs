@@ -7,6 +7,7 @@
     <title>HR jobs</title>
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../assests/css/style.css">
+    <script src="../assests/lib/jquery-3.6.0.min_2.js"></script>
     <!-- <script src="assests/js/jquery-3.6.0.min_2.js"></script> -->
 </head>
 <body>
@@ -23,14 +24,14 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pages/jobs.html">Jobs</a>
+          <a class="nav-link" href="jobs.html">Jobs</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="pages/services.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Services
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Make resme</a></li>
+            <li><a class="dropdown-item" href="resume.html">Make resme</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -62,9 +63,15 @@
     <li class="list-group-item">Doctore</li>
   </ul>  
 </div> -->
-
+<h2>Filterable List</h2>
+<p>Type something in the input field to search the list for specific items:</p>  
+<input class="form-control" id="myInput" type="text" placeholder="Search..">
+<br>
 <!-- class="col-sm-4" -->
-    <main class="list-group " id="myList">
+    <main class="container-fluid" >
+      <article>
+      <section class=" row">
+      <section class="list-group col-6 " id="myList" >
       <div class="card border-primary mb-3 list-group-item " style="max-width: 18rem;">
         <div class="card-header">Graphic Desgin</div>
         <div class="card-body text-primary">
@@ -93,9 +100,42 @@
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
       </div>
+    </section>
+      <section class="list-group col-6 " id="myList" >
+      <div class="card border-primary mb-3 list-group-item " style="max-width: 18rem;">
+        <div class="card-header">Graphic Desgin</div>
+        <div class="card-body text-primary">
+          <h5 class="card-title"></h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card border-secondary mb-3 list-group-item" style="max-width: 18rem;">
+        <div class="card-header">Camera Man</div>
+        <div class="card-body text-secondary">
+          <h5 class="card-title">Secondary card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card border-success mb-3 list-group-item" style="max-width: 18rem;">
+        <div class="card-header">Arcticure</div>
+        <div class="card-body text-success">
+          <h5 class="card-title">Success card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card border-danger mb-3 list-group-item" style="max-width: 18rem;">
+        <div class="card-header">Doctore</div>
+        <div class="card-body text-danger">
+          <h5 class="card-title">Danger card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </section>
+  </section>
+  </article>
     </main> 
     <footer></footer>
-    <script src="../assests/lib/jquery-3.6.0.min_2.js"></script>
+    
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="assests/js/template .js"></script>
     <script>
