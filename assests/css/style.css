@@ -2,7 +2,7 @@
 
 :root
 {
-    --color-one:#ffd656;
+    /* --color-one:#ffd656;
     --color-one:gl;
     --color-two:#6059f7;
     --color-three:#6592fe;
@@ -12,12 +12,15 @@
     --color-seven:#6592fe;
     --color-eight:#1e306e;
     --color-weght:#F8F9FA;
-    --color-weght2:#F5F5F5;
+    --color-weght2:#F5F5F5; */
+    --main-color:#059862;
+    --hover-color:#87cab2;
+    --font-color:#777;
 } 
 *{
     /* color:    var(--color-one); */
     font-family: lato;
-    color: #777;
+    color: var(--font-color);
     line-height: 30px;
 }
 a{
@@ -26,11 +29,14 @@ a{
 }
 
 .navbar{
-    background-color:#059862;
+    background-color:var(--main-color)
 }
 .card-body{
     color: white;
 }
+.btn-outline-success:hover{
+    background-color:#87cab2;
+  }
 main{
     display: flex;
     justify-content: space-around;
@@ -40,10 +46,15 @@ main{
     main{
         flex-direction: column;
         justify-content: space-between;
+        
     }
-    .s{
+    .adver{
+        position: relative;
+    }
+    
+    /* .s{
         width: 100vw;
-    }
+    } */
 }
 .card_of_jobs > aside > div>
 {
@@ -57,7 +68,7 @@ main{
     width: 100%;   
 }
 .sidebar-dashbord a {
-    background-color:#059862;
+    background-color:var(--main-color);
     color: gold;
 }
 /* 
@@ -73,11 +84,18 @@ aside{
 @media(max-width:700px){
     aside{
         flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
+        align-items: space-between;
+        justify-content: center;
+        /* flex-shrink: 3; */
         /* height: px; */
         margin-bottom:40px;
+        margin-top:40px ;
 
+    }
+    aside div{
+        margin-bottom:40px;
+        margin-top:40px ;
+        position: relative;
     }
     .card_of_jobs{
         width: 100%;
@@ -109,6 +127,16 @@ aside{
     }
     
 }
+/* aside{
+
+} */
+/* footer{
+    position: relative;
+    width: 100vw;
+    top:1200px;
+    height: 100px;
+    background-color:#059862 ;
+} */
 /* .carousel-control-next-icon{
     color: gold;
 

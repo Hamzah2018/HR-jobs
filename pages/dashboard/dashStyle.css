@@ -1,12 +1,11 @@
 .navbar{
-    display: none;
-  }
-@media(max-width:800px){
-      .navbar{
-        display: block; 
-      }
-      .sidebar-dashbord {
         display: none;
       }
-      
-}
+    @media(max-width:800px){
+          .navbar{
+            display: block; 
+          }
+          .sidebar-dashbord {
+            display: none;
+          }
+    }
