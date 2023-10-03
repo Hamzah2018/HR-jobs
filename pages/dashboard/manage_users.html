@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css"> -->
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../assests/css/style.css">
+    <link rel="stylesheet" href="../../assests/css/dashboard.css">
+    <link rel="stylesheet" href="../../assests/css/all.css">
+    <!-- <link rel="stylesheet" href="../../assests/css/dashStyle.css">     -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="dashStyle.css"> -->
+    <style>
+      
+    </style>
+</head>
+  <!-- menu section  -->
+  <!-- <body> -->
+    <body data-kt-name="metronic" id="kt_body" class="header-tablet-and-mobile-fixed aside-enabled">
+    
+ <nav class="navbar navbar-expand-lg navbar-light container-fluid col-lg " >
+  <div class="container-fluid">
+                <!-- offcanvase trigger -->
+    <button class="navbar-toggler me-2 " type="button" data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+    <span class="navbar-toggler-icon" data-bs-target="#offcanvasExample"></span>
+</button>
+            <!-- offcanvase trigger End -->
+    <a  class="navbar-brand" href="../../index.html">H<span style="color: yellow;">R</span> <small >Jobs </small> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   
+      <!-- <form class="d-flex ms-auto"> -->
+        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+        <!-- <a class="btn btn-outline-success" style="color:yellowgreen;" href="pages/dashboard/protfile.html">Sing In</a>  / -->
+        <!-- <a class="btn btn-outline-success" style="color:yellowgreen;" href="pages/regest.html">Creat Email</a> -->
+      <!-- </form> -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="d-flex ms-auto ms-auto">
+        <div class="input-group my-4 my-lg-0">
+            <input type="text" class="form-control" placeholder="Recipient's username"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-primary" type="button" id="button-addon2">
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+    </form>
+      <ul class="navbar-nav mb-2 mb-lg-0" style="color: #777 !important;">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-person-fill"></i>
+            </a>
+            
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                <li><a  class="dropdown-item" href="pages/dashboard/protfile.html" 7
+                
+                ><i class="bi bi-person-fill m-2"></i> Profile</a></li>
+                <li><a class="dropdown-item fc" href="pages/dashboard/manage_users.html"><i class="bi bi-speedometer m-2"></i> Dashboard</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item fc" href="pages/site/regest.html"><i class="bi bi-box-arrow-down-right m-2"></i> Sign out</a></li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="pages/jobs.html" style="color: yellow;">Create Email</a>
+      </li> -->
+    </div>
+  </div>
+</nav>
+<!--End menu section  -->
+
+  <!-- <div class="d-flex " id="wrapper"> -->
+    <!-- Sidebar-->
+    <!-- bg-white -->
+    <div class="offcanvas offcanvas-start bg-dark text-white sidebare-nav" tabindex="-1" id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-body p-0">
+
+    <div class="border-end sidebar-dashbord bg-dashbord" id="sidebar-wrapper">
+      <!-- <div class="sidebar-heading border-bottom bg-light">HR jobs</div>
+      style="width:100% !important; background-color: brown;" -->
+      <a style=" margin-top: -2px !important;" class="sidebar-heading border-bottom bg-light btn col-lg-12 w-100 p-3" href="../../index.html">H<span style="color: yellow;">R</span> <small >Jobs </small> </a>
+
+        <div class="list-group list-group-flush">
+            <a class="list-group-item my-2 list-group-item-action p-3" href="#">Dashboard</a>
+            <a class="list-group-item my-2 list-group-item-action p-3" href="#">Protfile</a>
+            <a class="list-group-item my-2 list-group-item-action p-3" href="experience.html">Experience</a>
+            <a class="list-group-item my-2 list-group-item-action p-3" href="skills.html">Skills</a>
+            <a class="list-group-item my-2 list-group-item-action p-3" href="Qualifications.html">Qualifications</a>
+            <!-- <a class="list-group-item my-2 list-group-item-action p-3" href="course.html">Courses</a> -->
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li style="color: #777 !important;"><a class="dropdown-item" href="templates/profile.html" style="color: #777 !important;"><i class="bi bi-person-fill m-2"></i> Profile</a></li>
+              <li><a class="dropdown-item" href="pages/dashboard/protfile.html"><i class="bi bi-speedometer m-2"></i> Dashboard</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="pages/site/regest.html"><i class="bi bi-box-arrow-down-right m-2"></i> Sign out</a></li>
+          </ul>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    
+<!-- Button trigger modal -->
+<!-- <main class="container justify-content-center m-auto w-75 mt-5 "> -->
+<main class="">
+    <div class="card">
+        <div class="card header">
+
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-striped data-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">15</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">16</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">17</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">18</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">19</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">20</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">21</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">22</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">23</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">24</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">25</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">26</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">27</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">28</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">29</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">30</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">31</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">32</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">33</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">34</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">35</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">36</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">37</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">38</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">39</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">40</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">41</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">42</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">43</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">44</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">45</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">46</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">47</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">48</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+<div class="card col-lg-6 ml-6 m-4  m-auto">
+    <img src="../../assests/imges/profile.png" class="card-img-top img-fluid" alt="...">
+    <div class="card-body">
+        <div>
+            <h3>Hamzah Ismail</h3>
+            <p class="card-text">Full-Stuck Developer 7 Years working in Amazion.</p>
+        </div>
+        <button type="button" class="btn btn-outline-dark m-5 justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Manage Your Profile
+         </button>
+         
+         <!-- Modal -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+             <div class="modal-content">
+               <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLabel">Hamzah Al-Hagi</h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                 <img src="../../assests/imges/profile.png" alt="">
+                 <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1"  class="form-label">Email address</label>
+                      <input type="email" placeholder="khalid@hotmail.com" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Your Phone Number</label>
+                        <input type="text" placeholder="967-773770030" class="form-control" id="exampleInputPassword1">
+                      </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">New</button>
+                  </form>
+               </div>
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                 <button type="button" class="btn btn-primary">Edite</button>
+                 <button type="button" class="btn btn-danger">Delete</button>
+                 <button type="button" class="btn btn-primary">Save</button>
+                 <a class="btn " href="experience.html"> >>> </a>
+               </div>
+             </div>
+           </div>
+         </div>
+    </div>
+  </div>
+  
+</main>
+   
+    <script src="../../assests/lib/jquery-3.6.0.min_2.js"> 
+    </script>
+    <!-- <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <!-- <script>
+        var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
+        
+        myModal.addEventListener('shown.bs.modal', function () {
+          myInput.focus()
+        })
+    </script> -->
+</body>
+</html>

@@ -1,0 +1,52 @@
+:root {
+    --offcanvas-width: 400px;
+    --topNavbarHeight: 67px;
+}
+
+.sidebar-dashbord {
+    width:94%;
+    position: fixed;
+    height: 100%;
+}
+
+main{    
+    margin-left: var(--offcanvas-width) !important;
+    margin-top: var(--topNavbarHeight) !important;
+}
+
+@media (max-width:991px) {
+main{
+
+    display: flex !important;
+    flex-direction: column !important;
+    margin: 0 !important;
+}
+.offcanvas{
+    position: relative;
+    width: 80% !important;
+}
+}
+
+@media (min-width:992px) {
+    body {
+        overflow: auto !important;
+    }
+
+    .offcanvas-backdrop::before {
+        display: none !important;
+    }
+
+    .sidebar-dashbord {
+        width: var(--offcanvas-width);
+    }
+    
+    .sidebare-nav{
+        transform: none;
+        visibility: visible !important;
+        width: var(--offcanvas-width);
+        top: var(--topNavbarHeight);
+        height: calc(100% - var(--topNavbarHeight));
+        padding-bottom: 120px;
+    }
+}
+
