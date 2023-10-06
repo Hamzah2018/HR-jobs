@@ -14,11 +14,15 @@ body{
     --main-color: #065f46;
     --hover-color: #87cab2;
     --font-color: #777;
+
     /* --font-color:#fbbf24; */
-    --font-color: #fde047;
+    /* --font-color: #fde047; */
+    --font-color: #eba146;
+
     --second-font-color: #fef9c3;
     --dark-color: #19283f;
     --green-color: #33d1cc;
+
 }
 
 * {
@@ -134,6 +138,29 @@ main .card .btn {
     margin-left: 35%;
 }
 
+article{
+    border-color: #A3CAB1 !important;
+}
+
+
+main .row .card {
+    color: var(--font-color) !important;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    overflow: hidden;
+    border-radius: 4px;
+    padding-bottom: 5px;
+    /* max-height: 220px; */
+    min-width: 350px;
+
+    background-color: #e9eeff !important;
+    
+}
+main .row .card:hover{
+    background-color:  #dbe3fd !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+} 
 .card-body {
     color: var(--font-color) !important;
 }
