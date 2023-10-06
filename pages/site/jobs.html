@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../assets/css/all.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/jobs.css">
     <style>
       .btn-outline-success:hover{
         background-color:#87cab2;
@@ -144,6 +145,7 @@
           <div class="row pt-4 mt-lg-5 mt-md-4 mt-0">
               <!-- header of page -->
               <section class="offer-jobs-container col-lg-12 col-md-8 col-sm-12">
+                <div id="slide-number" class="slide-number"></div>
                   <!-- Single Job -->
                   <!-- Single Job -->
                   <article class="card p-lg-3 p-md-2 p-3 mb-2 shadow-sm search-job border-4 border-success-subtle" role="button" >
@@ -281,8 +283,30 @@
                       </div>
                   </article>
               </section>
-    </main>
+<!--               
+              <div class="offer-controls container col-lg-12 col-md-8 col-sm-12">
+                <span id="prev" class="prev">Previous</span>
+                <span id="indicators" class="indicators"></span>
+                <span id="next" class="next">Next</span>
+              </div> -->
+            </div>
 
+            <!-- <nav aria-label="offer-controls Page navigation example"> -->
+              <div class="slider-controls">
+                <span id="prev" class="prev">Previous</span>
+                <span id="indicators" class="indicators"></span>
+                <span id="next" class="next">Next</span>
+              <!-- </div> -->
+              <!-- <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+              </ul> -->
+            </nav>
+    </main>
+   
         <!-- Footer -->
         <footer class=" text-white-50 text-md-start pt-5 pb-4">
           <div class="container text-center text-md-left">
@@ -376,7 +400,7 @@
               </div>
             </div>
           </div>
-        </footer>
+        </footer> 
         <!-- Footer -->
   
        <!-- FOOTER -->
